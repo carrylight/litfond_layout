@@ -1,0 +1,228 @@
+.lf-header {
+	position: relative;
+}
+.lf-header__top {
+	height: 80px;
+	background: url("../img/bg.png") repeat-x #3773DC center center;
+}
+.lf-header__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	@media (max-width: 992px) {
+		justify-content: center;
+	}
+}
+.lf-header__tabs {
+	align-self: flex-end;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+.lf-header__tabs-item {
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+}
+.lf-header__tabs-item_stomatology {
+	background: #F18423;
+	box-shadow: 15px 0 40px rgba(0, 0, 0, 0.15);
+	border-radius: 6px 0 0 0;
+}
+.lf-header__tabs-item_main {
+	background: #006DB7;
+}
+.lf-header__tabs-item_child {
+	background: #834E99;
+	box-shadow: 15px 0 40px rgba(0, 0, 0, 0.1);
+	border-radius: 0 6px 0 0;
+}
+.lf-header__tabs-item_active {
+	background: #ffffff;
+	height: 71px;
+
+	.lf-header__logo_stomatology {
+		background: url("../img/lf-logo-stomatology-active.png") no-repeat;
+	}
+	.lf-header__logo_main {
+		background: url("../img/lf-logo-main-active.png") no-repeat;
+	}
+	.lf-header__logo_child {
+		background: url("../img/lf-logo-child-active.png") no-repeat;
+	}
+}
+.lf-header__logo_main {
+	display: inline-block;
+	width: 150px;
+	height: 44px;
+	background: url("../img/lf-logo-main.png") no-repeat;
+
+	@media (max-width: 576px) {
+		width: 35px;
+		height: 44px;
+		background: url("../img/lf-logo-main-short.png") no-repeat;
+	}
+}
+.lf-header__logo_stomatology {
+	display: inline-block;
+	width: 155px;
+	height: 42px;
+	background: url("../img/lf-logo-stomatology.png") no-repeat;
+	position: relative;
+	top: -4px;
+
+	@media (max-width: 576px) {
+		width: 41px;
+		height: 42px;
+		background: url("../img/lf-logo-stomatology-short.png") no-repeat;
+	}
+}
+.lf-header__logo_child {
+	display: inline-block;
+	width: 150px;
+	height: 44px;
+	background: url("../img/lf-logo-child.png") no-repeat;
+
+	@media (max-width: 576px) {
+		width: 37px;
+		height: 44px;
+		background: url("../img/lf-logo-child-short.png") no-repeat;
+	}
+}
+.lf-header__contacts {
+	padding: 20px 0;
+	line-height: 125%;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+.lf-header__contacts-icon {
+	color: $color_orange;
+	margin-right: 17px;
+}
+.lf-header__contacts-title {
+	font-size: 18px;
+
+	@media (max-width: 1200px) {
+		font-size: 14px;
+	}
+}
+.lf-header__contacts-subtitle {
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.lf-header-menu {
+}
+.lf-header-navbar {
+	padding: 0;
+	position: relative;
+
+	.nav-item {
+		margin-right: 1em;
+
+		@media (max-width: 992px) {
+			border-bottom: 1px solid #E6E6E6;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		.nav-link {
+			padding-top: 24px;
+			padding-bottom: 24px;
+
+			i {
+				font-size: 8px;
+				margin-left: 3px;
+				position: relative;
+				top: -2px;
+
+				@media (max-width: 991px) {
+					font-size: 16px;
+				}
+			}
+
+			@media (max-width: 991px) {
+				font-size: 32px;
+			}
+		}
+
+		&:first-child {
+			.nav-link {
+				padding-left: 0;
+			}
+		}
+	}
+	.dropdown-toggle::after {
+		display: none;
+	}
+	.dropdown-menu {
+		border: 1px solid #F2F2F2;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+		border-radius: 10px;
+		margin-top: -1rem;
+
+		.dropdown-item {
+			padding: .5rem 1.5rem;
+		}
+
+		@media (max-width: 991px) {
+			border: none;
+			box-shadow: none;
+			font-size: 24px;
+		}
+	}
+	.navbar-toggler {
+		width: 42px;
+		height: 42px;
+		padding: 0;
+		margin: 24px 0;
+
+		.navbar-toggler-icon {
+			background: url("../img/menu-close.png") no-repeat center;
+		}
+
+		&.collapsed {
+			.navbar-toggler-icon {
+				background: url("../img/menu.png") no-repeat center;
+			}
+		}
+	}
+}
+.lf-header-navbar__link {
+	color: $color_blue;
+}
+.lf-header-menu__form {
+	@media (max-width: 992px) {
+		position: absolute;
+		right: 0;
+		top: 26px;
+	}
+}
+
+/* stomatology */
+.lf-stomatology {
+	.lf-header__top {
+		background: url("../img/bg.png") repeat-x #F18423 center center;
+	}
+	.lf-header__contacts-icon {
+		color: #ffffff;
+	}
+}
+
+.lf-child {
+	.lf-header__top {
+		background: url("../img/bg.png") repeat-x #75388E center center;
+	}
+}
+

@@ -1,0 +1,37 @@
+.lf-breadcrumbs-wrapper {
+	padding: 3rem 0;
+	background: url("../img/bg.png") repeat-x #3773DC center center;
+}
+
+.lf-stomatology {
+	.lf-breadcrumbs-wrapper {
+		background: url("../img/bg.png") repeat-x #F18423 center center;
+	}
+}
+
+.lf-child {
+	.lf-breadcrumbs-wrapper {
+		background: url("../img/bg.png") repeat-x #75388E center center;
+	}
+}
+
+.lf-breadcrumbs {
+	li {
+		font-size: 12px;
+		.lf-breadcrumbs__item {
+			color: #ffffff;
+
+			span {
+				text-decoration: underline;
+			}
+
+			&:after {
+				content: '/';
+				margin: 0 2px;
+			}
+		}
+		.lf-breadcrumbs__item_last {
+			color: rgba(255,255,255,0.5);
+		}
+	}
+}

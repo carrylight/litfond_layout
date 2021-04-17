@@ -1,0 +1,235 @@
+.lf-promo__carousel-item {
+	background: url("../img/bg.png") repeat-x #3773DC center center;
+	height: 440px;
+
+	@media (max-width: 768px) {
+		background: url("../img/bg.png") repeat-x #3773DC center center;
+		height: 440px;
+	}
+
+	@media (max-width: 576px) {
+		background: url("../img/bg.png") repeat-x #3773DC center center;
+		height: 300px;
+	}
+}
+.lf-promo__carousel-item-img-wrap {
+	height: 440px;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	@media (max-width: 576px) {
+		height: 300px;
+	}
+
+	&:before {
+		content: " ";
+		width: 540px;
+		height: 540px;
+		left: -50px;
+		top: -50px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+
+		@media (max-width: 992px) {
+			left: -33px;
+		}
+
+		@media (max-width: 576px) {
+			width: 350px;
+			height: 350px;
+			left: -33px;
+			top: -25px;
+		}
+	}
+	&:after {
+		content: " ";
+		width: 640px;
+		height: 640px;
+		left: -100px;
+		top: -105px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+
+		@media (max-width: 576px) {
+			width: 400px;
+			height: 400px;
+			left: -50px;
+			top: -50px;
+		}
+	}
+}
+.lf-promo__carousel-item-img {
+	background: url(../img/granny.jpg) center center no-repeat;
+	width: 100%;
+	height: 100%;
+	border-radius: 440px 0 0 440px;
+	position: relative;
+	z-index: 3;
+	background-size: cover;
+
+	@media (max-width: 768px) {
+		width: calc(100% + 48px);
+		right: -42px;
+		border-radius: 300px 0 0 300px;
+	}
+
+	@media (max-width: 576px) {
+		width: 100%;
+		right: 0;
+	}
+}
+.lf-promo__carousel-item-content {
+	padding: 78px 0 80px;
+	color: #ffffff;
+
+	@media (max-width: 576px) {
+		padding: 28px 0 40px;
+	}
+}
+.lf-promo__carousel-title {
+	font-size: 58px;
+	line-height: 140%;
+	font-family: 'Circe Bold', sans-serif;
+	font-weight: bold;
+
+	@media (max-width: 768px) {
+		font-size: 28px;
+	}
+}
+.lf-promo__carousel-subtitle {
+	font-size: 24px;
+	line-height: 140%;
+	margin-bottom: 1rem;
+
+	@media (max-width: 576px) {
+		font-size: 16px;
+	}
+}
+.lf-promo__carousel-text {
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 1rem;
+	font-family: 'Circe Light', sans-serif;
+
+	@media (max-width: 576px) {
+		font-size: 14px;
+	}
+}
+
+.lf-promo__numbers {
+	background: #FFFFFF;
+	border: 1px solid #F5F5F5;
+	box-sizing: border-box;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+	border-radius: 10px;
+	padding: 16px 36px;
+	bottom: -24px;
+	right: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+
+	li {
+		background: #E8E8E8;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		align-self: center;
+
+		&.active {
+			background: #F3A73B;
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+/* doctor's carousel, actions' carousel */
+.lf-doctors__carousel,
+.lf-actions__carousel {
+	.slick-prev,
+	.slick-next {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 37%;
+		//display: block;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background: transparent;
+		background: $color_blue;
+		border-radius: 10px;
+		width: 52px;
+		height: 52px;
+		text-align: center;
+		z-index: 10;
+		left: 2%;
+
+		display: none !important;
+	}
+	.slick-next {
+		left: auto;
+		right: 2%;
+	}
+	.slick-next::before,
+	.slick-prev::before {
+		content: '';
+		background: url("../img/slider-chevron.svg") no-repeat;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+	}
+	.slick-prev::before {
+		transform: rotate(180deg);
+	}
+
+	@media (max-width: 991px) {
+		.slick-prev {
+			left: 5%;
+		}
+		.slick-next {
+			right: 5%;
+		}
+	}
+}
+
+.lf-doctors__carousel:hover,
+.lf-actions__carousel:hover {
+	.slick-prev,
+	.slick-next {
+		display: block !important;
+	}
+}
+
+.lf-stomatology {
+	.lf-promo__carousel-item {
+		background-color: #F18423;
+
+		.lf-promo__carousel-item-img {
+			background: url(../img/stomatology.jpg) center center no-repeat;
+		}
+	}
+	.lf-promo__numbers li.active {
+		background: $color_blue;
+	}
+}
+.lf-child {
+	.lf-promo__carousel-item {
+		background-color: #75388E;
+
+		.lf-promo__carousel-item-img {
+			background: url(../img/child.png) center center no-repeat;
+		}
+	}
+}

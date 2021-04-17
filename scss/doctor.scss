@@ -1,0 +1,140 @@
+.lf-doctor__doctor-img {
+	border-radius: 10px;
+}
+.lf-doctor__badge {
+	background: #1758C9;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 4px;
+	margin-right: 0.5rem;
+	font-family: 'Circe Light', sans-serif;
+	display: inline-block;
+	padding: 6px 20px;
+	line-height: 160%;
+}
+.lf-doctor__badge_orange {
+	background: $color_orange;
+}
+.lf-doctor__separator {
+	height: 1px;
+	width: 30%;
+	background: rgba(255, 255, 255, 0.1);
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.lf-doctor__place {
+	color: #ffffff;
+	display: flex;
+
+	span {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+}
+.lf-doctor__place-icon {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url("../img/icon-database.svg") no-repeat;
+	margin-right: 8px;
+}
+.lf-doctor__experience {
+	font-family: 'Circe Light', sans-serif;
+	color: #ffffff;
+	display: flex;
+
+	strong {
+		font-family: 'Circe Regular', sans-serif;
+	}
+}
+.lf-doctor__experience-icon {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url("../img/icon-calendar.svg") no-repeat;
+	margin-right: 8px;
+}
+.lf-doctor__top p {
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Circe Light', sans-serif;
+}
+
+
+.lf-doctor__tabs {
+	border: none;
+
+	.nav-item {
+		color: rgba(86, 146, 250, 0.3);
+		font-size: 32px;
+		border: none;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&.active {
+			color: $color_link;
+		}
+
+		@media (max-width: 1200px) {
+			font-size: 24px;
+		}
+
+		@media (max-width: 992px) {
+			font-size: 18px;
+			padding: 0.5rem 0.5rem;
+		}
+		@media (max-width: 768px) {
+			font-size: 24px;
+			padding: 0.5rem 0;
+			width: 100%;
+		}
+	}
+
+}
+.lf-doctor__tabs-content {
+	font-size: 18px;
+	color: $color_black;
+	line-height: 160%;
+	padding: 15px 0;
+
+	strong {
+		font-family: 'Circe Bold', sans-serif;
+		font-weight: bold;
+	}
+}
+
+.lf-doctor__title {
+	font-size: 20px;
+	line-height: 140%;
+	margin-bottom: 1rem;
+	font-family: 'Circe Bold', sans-serif;
+}
+.lf-doctor__list {
+	margin-bottom: 2rem;
+
+	li {
+		margin-bottom: 0.5rem;
+		position: relative;
+		padding-left: 20px;
+
+		&:before {
+			content: "";
+			background: #5692FA;
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;position: absolute;
+			top: 8px;
+			left: 0;
+		}
+	}
+}
+
+.lf-doctor__slider {
+	background: #F5F5F5;
+	padding: 3rem 0;
+}

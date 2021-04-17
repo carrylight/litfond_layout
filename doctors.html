@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Литфонд Doctors</title>
+</head>
+<body class="lf-stomatology">
+<div class="lf-header">
+	<div class="lf-header__top">
+		<div class="container">
+			<div class="lf-header__content">
+				<div class="lf-header__contacts">
+					<div>
+						<i class="fas fa-map-marker-alt lf-header__contacts-icon"></i>
+					</div>
+					<div>
+						<div class="lf-header__contacts-title">1-я Аэропортовская, 5</div>
+						<div class="lf-header__contacts-subtitle">Москва, м. Аэропорт</div>
+					</div>
+				</div>
+
+				<div class="lf-header__tabs">
+					<div class="lf-header__tabs-item lf-header__tabs-item_stomatology lf-header__tabs-item_active">
+						<a href="#" class="lf-header__logo_stomatology"></a>
+					</div>
+					<div class="lf-header__tabs-item lf-header__tabs-item_main">
+						<a href="#" class="lf-header__logo_main"></a>
+					</div>
+					<div class="lf-header__tabs-item lf-header__tabs-item_child">
+						<a href="#" class="lf-header__logo_child"></a>
+					</div>
+				</div>
+
+				<div class="lf-header__contacts">
+					<div>
+						<i class="fas fa-phone-alt lf-header__contacts-icon"></i>
+					</div>
+					<div>
+						<div class="lf-header__contacts-title">(495) 150-60-01</div>
+						<div class="lf-header__contacts-subtitle" data-toggle="modal" data-target="#backCall">Заказать звонок</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="lf-header-menu">
+			<nav class="navbar navbar-expand-lg lf-header-navbar">
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#lfTopMenu" aria-controls="lfTopMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="lfTopMenu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="lfTopMenuDirections" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Направления
+								<i class="fas fa-chevron-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="lfTopMenuDirections">
+								<a class="dropdown-item" href="#">Направление номер один</a>
+								<a class="dropdown-item" href="#">Направление номер два</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="lfTopMenuDoctors" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Врачи
+								<i class="fas fa-chevron-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="lfTopMenuDoctors">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="lfTopMenuPrices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Цены
+								<i class="fas fa-chevron-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="lfTopMenuPrices">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Программы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link lf-header-navbar__link" href="#">% Акции</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="lfTopMenuAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								О клинике
+								<i class="fas fa-chevron-down"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="lfTopMenuAbout">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<form class="form-inline lf-header-menu__form">
+					<button class="lf-btn lf-btn_blue lf-btn_callback"><i class="fas fa-phone-alt"></i></button>
+					<button type="button" class="lf-btn" data-toggle="modal" data-target="#backCall"><i class="far fa-edit"></i> Запись на прием</button>
+				</form>
+			</nav>
+		</div>
+	</div>
+
+</div>
+
+<div class="lf-content">
+
+	<div class="lf-breadcrumbs-wrapper mb-4">
+		<div class="container">
+			<div class="text-center mb-2">
+				<div class="lf-breadcrumbs">
+					<ul itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop=itemListElement itemscope itemtype="https://schema.org/ListItem">
+							<a href="#" class="lf-breadcrumbs__item" itemprop="item">
+								<span itemprop="name">Главная</span>
+								<meta itemprop="position" content="1"/>
+							</a>
+							<span class="lf-breadcrumbs__item_last" itemprop="item">
+							<span itemprop="name">Врачи</span>
+							<meta itemprop="position" content="2"/>
+						</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="text-center mb-4 lf-prices__top">
+				<h2 class="lf-title_white">Наши специалисты</h2>
+			</div>
+			<form action="#" class="lf-doctors__search">
+				<div class="row">
+					<div class="col-12 col-md-5 mb-3 mb-md-0">
+						<select class="form-control">
+							<option>Все направления</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="col-12 col-md-7">
+						<div class="lf-doctors__search-bar">
+							<input type="text" placeholder="Поиск врача по ФИО" />
+							<button type="submit" class="lf-doctors__search-bar-btn"><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="lf-doctors__list">
+			<h2><span>Аллергология-иммунология</span></h2>
+
+			<div class="row">
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-1.jpg">
+						<a href="#" class="lf-doctors__card-name">Быков Сергей Анатольевич</a>
+						<div class="lf-doctors__card-text">
+							Врач-аллерголог-иммунолог
+							<span>Кандидат медицинских наук</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-2.jpg">
+						<a href="#" class="lf-doctors__card-name">Извекова Вера Андреевна</a>
+						<div class="lf-doctors__card-text">
+							Врач-аллерголог-иммунолог
+							<span>Кандидат медицинских наук</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-3.jpg">
+						<a href="#" class="lf-doctors__card-name">Тян Оксана Александровна</a>
+						<div class="lf-doctors__card-text">
+							Заведующая отделением, <br/>врач-акушер-гинеколог
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-4.jpg">
+						<a href="#" class="lf-doctors__card-name">Максимова Тамара Анатольевна</a>
+						<div class="lf-doctors__card-text">
+							врач-акушер-гинеколог
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-2.jpg">
+						<a href="#" class="lf-doctors__card-name">Извекова Вера Андреевна</a>
+						<div class="lf-doctors__card-text">
+							Врач-аллерголог-иммунолог
+							<span>Кандидат медицинских наук</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-4.jpg">
+						<a href="#" class="lf-doctors__card-name">Максимова Тамара Анатольевна</a>
+						<div class="lf-doctors__card-text">
+							врач-акушер-гинеколог
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-1.jpg">
+						<a href="#" class="lf-doctors__card-name">Быков Сергей Анатольевич</a>
+						<div class="lf-doctors__card-text">
+							Врач-аллерголог-иммунолог
+							<span>Кандидат медицинских наук</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2><span>Гинекология</span></h2>
+
+			<div class="row">
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-3.jpg">
+						<a href="#" class="lf-doctors__card-name">Тян Оксана Александровна</a>
+						<div class="lf-doctors__card-text">
+							Заведующая отделением, <br/>врач-акушер-гинеколог
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-4.jpg">
+						<a href="#" class="lf-doctors__card-name">Максимова Тамара Анатольевна</a>
+						<div class="lf-doctors__card-text">
+							врач-акушер-гинеколог
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-2.jpg">
+						<a href="#" class="lf-doctors__card-name">Извекова Вера Андреевна</a>
+						<div class="lf-doctors__card-text">
+							Врач-аллерголог-иммунолог
+							<span>Кандидат медицинских наук</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-5">
+					<div class="lf-doctors__card">
+						<img src="img/temp/doctor-4.jpg">
+						<a href="#" class="lf-doctors__card-name">Максимова Тамара Анатольевна</a>
+						<div class="lf-doctors__card-text">
+							врач-акушер-гинеколог
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="lf-prices__form">
+		<div class="container">
+			<form class="row">
+				<div class="col-md-6 col-lg-4">
+					<h2 class="mb-2"><a href="#" class="lf-link">Записаться</a> на прием</h2>
+					<div class="lf-order__subtitle">
+						Отправьте заявку с помощью формы справа, после мы вам перезвоним для уточнения даты и времени приема
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-8">
+					<div class="row">
+						<div class="col-lg-4 col-12">
+							<div class="form-group">
+								<label for="yourName" class="lf-label">Ваше имя</label>
+								<input type="text" class="form-control lf-input" id="yourName" placeholder="Как вас зовут?">
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="form-group">
+								<label for="yourPhone" class="lf-label">Ваш телефон</label>
+								<input type="number" class="form-control lf-input lf-input_error" id="yourPhone">
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<button type="submit" class="lf-btn lf-order__btn lf-order__btn_right">Отправить заявку</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="lf-order__agreement">
+								Нажимая кнопку "Отправить заявку" вы соглашаетесь с условиями <a href="#" class="lf-link">Политики конфиденциальности</a> и <a href="#" class="lf-link">Пользовательского соглашения</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>
+
+<div class="lf-footer">
+	<div class="lf-footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="lf-footer-top__title">В нашей клинике</div>
+					<ul class="lf-footer-top__list">
+						<li><a href="#">Врачи</a></li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Направления</a></li>
+						<li><a href="#">VIP отделение</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="lf-footer-top__title">О клинике</div>
+					<ul class="lf-footer-top__list">
+						<li><a href="#">Лицензии</a></li>
+						<li><a href="#">Фото</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Контролирующим органам</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="lf-footer-top__title">Пациентам</div>
+					<ul class="lf-footer-top__list">
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="lf-footer-top__title">Контакты</div>
+					<ul class="lf-footer-top__list">
+						<li>
+							<a href="#">
+								<i class="fas fa-phone-alt lf-footer__contacts-icon"></i> (495) 150-60-01
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-clock lf-footer__contacts-icon"></i> 10:00 — 20:00
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-map-marker-alt lf-footer__contacts-icon"></i> г. Москва
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-map lf-footer__contacts-icon"></i> м. Аэропорт, ул. 1-я Аэропортовская, 5
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lf-footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 order-1 col-md-4 mb-3 mb-md-0">
+					<a href="#" class="lf-footer-bottom__soc lf-footer-bottom__soc_fb"></a>
+					<a href="#" class="lf-footer-bottom__soc lf-footer-bottom__soc_vk"></a>
+					<a href="#" class="lf-footer-bottom__soc lf-footer-bottom__soc_inst"></a>
+				</div>
+				<div class="col-12 order-3 order-md-2 col-md-4">
+					<div class="lf-footer-bottom__copyright">
+						© ЗАО «Центральная поликлиника Литфонда»
+						Лицензия № ЛО-77-01-017172 от 11.12.2018г.
+					</div>
+				</div>
+				<div class="col-6 order-2 order-md-3 col-md-4 mb-3 mb-md-0">
+					<div class="lf-footer-bottom__support">
+						<div class="lf-footer-bottom__support-text">Разработка и поддержка</div>
+						<a href="#" class="lf-footer-bottom__support-link">Позитивные Системы</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade lf-modal" id="backCall" tabindex="-1" role="dialog" aria-labelledby="backCallTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">
+					<h5 class="modal-title lf-modal__modal-title" id="backCallTitle">Обратный звонок</h5>
+					<button type="button" class="close lf-modal__close" data-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="lf-modal__subtitle">Оставьте номер телефона, мы вам перезвоним и ответим на интересующие вас вопросы</div>
+					<div class="form-group">
+						<label for="yourNameModal" class="lf-label">Ваше имя</label>
+						<input type="text" class="form-control lf-input" id="yourNameModal" placeholder="Как вас зовут?">
+					</div>
+					<div class="form-group mb-4">
+						<label for="yourPhoneModal" class="lf-label">Ваш телефон</label>
+						<input type="number" class="form-control lf-input lf-input_error" id="yourPhoneModal">
+					</div>
+					<button type="submit" class="lf-btn lf-btn_fullwidth">Отправить заявку</button>
+					<div class="row">
+						<div class="lf-modal__agreement col-12 col-md-11">Нажимая кнопку "Отправить заявку" вы соглашаетесь с условиями <a href="#" class="lf-link">Политики конфиденциальности</a> и <a href="#" class="lf-link">Пользовательского соглашения</a></div>
+						<div class="col-1"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

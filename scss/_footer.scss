@@ -1,0 +1,107 @@
+.lf-footer {
+	background: linear-gradient(180deg, #427DE4 0%, #2E68CE 100%);
+	color: #ffffff;
+}
+.lf-footer-top {
+	padding: 40px 0 0;
+}
+.lf-footer-top__list {
+	li {
+		margin-bottom: 10px;
+	}
+
+	a {
+		font-size: 15px;
+		line-height: 120%;
+		font-family: Circe Light, sans-serif;
+		display: flex;
+
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+.lf-footer-top__title {
+	color: #ffffff;
+	font-size: 22px;
+	line-height: 125%;
+	margin-bottom: 20px;
+}
+.lf-footer-top__link {
+	display: block;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 125%;
+	margin-bottom: 30px;
+	&:hover {
+		color: #ffffff;
+	}
+}
+
+.lf-footer-bottom {
+	padding: 30px 0 20px;
+	font-size: 12px;
+	background: linear-gradient(180deg, #2E68CE 0%, #427DE4 100%);
+}
+.lf-footer-bottom__copyright {
+	color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+}
+.lf-footer__contacts-icon {
+	font-size: 11px;
+	width: 15px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.lf-footer-bottom__soc {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #ffffff;
+	margin-right: 1em;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.lf-footer-bottom__soc_fb {
+	background: url("../img/icon-facebook.svg") no-repeat center;
+}
+.lf-footer-bottom__soc_vk {
+	background: url("../img/icon-vk.svg") no-repeat center;
+}
+.lf-footer-bottom__soc_inst {
+	background: url("../img/icon-instagram.svg") no-repeat center;
+}
+
+.lf-footer-bottom__support {
+	color: rgba(255, 255, 255, 0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+}
+.lf-footer-bottom__support-text {
+	white-space: nowrap;
+}
+.lf-footer-bottom__support-link {
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);;
+}
+
+.lf-stomatology {
+	.lf-footer {
+		background: linear-gradient(180deg, #F0A234 0%, #F18423 100%);
+	}
+	.lf-footer-bottom {
+		background: linear-gradient(180deg, #F18423 0%, #F0A234 100%);
+	}
+}
+.lf-child {
+	.lf-footer {
+		background: linear-gradient(180deg, #9F60B9 0%, #75388E 100%);
+	}
+	.lf-footer-bottom {
+		background: linear-gradient(180deg, #75388E 0%, #9F60B9 100%);
+	}
+}

@@ -1,0 +1,66 @@
+.modal-backdrop {
+	background: #ffffff;
+	opacity: 0.2 !important;
+}
+body.modal-open .lf-header,
+body.modal-open .lf-content,
+body.modal-open .lf-footer {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+}
+.lf-modal {
+	.modal-content {
+		border: none;
+		border-radius: 10px;
+	}
+	.modal-header {
+		border: none;
+		align-items: center;
+		padding: 2rem 2rem 0 2rem;
+
+		@media (max-width: 768px) {
+			padding: 1rem;
+		}
+	}
+	.modal-body {
+		border: none;
+		align-items: center;
+		padding: 1rem 2rem 2rem 2rem;
+
+		@media (max-width: 768px) {
+			padding: 1rem 1rem 2rem 1rem;
+		}
+	}
+	.lf-modal__modal-title {
+		font-size: 32px;
+		color: $color_black;
+		font-family: "Circe Light", sans-serif;
+
+		@media (max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	.lf-modal__close {
+		background: url("../img/modal-close.svg") no-repeat;
+		transition: all ease-in-out 0.5s;
+		opacity: 0.8;
+		margin: 0;
+
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+	.lf-modal__subtitle {
+		font-size: 14px;
+		margin-bottom: 2rem;
+	}
+	.lf-modal__agreement {
+		color: $color_light_grey;
+		font-size: 12px;
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+}

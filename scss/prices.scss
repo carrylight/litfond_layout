@@ -1,0 +1,147 @@
+.lf-prices__top {
+	position: relative;
+
+	.lf-prices__top-btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		@media (max-width: 767px) {
+			position: relative;
+		}
+	}
+}
+
+.lf-prices__search {
+	background: #FFFFFF;
+	padding: 25px 24px;
+	border: 1px solid #F5F5F5;
+	box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: -8rem;
+}
+.lf-prices__search-btn {
+	width: calc(20% - 12px);
+	padding: 10px;
+	margin: 0 6px;
+	font-family: Circe Light, sans-serif;
+	font-size: 16px;
+	line-height: 160%;
+	color: $color_black;
+	background: #FFFFFF;
+	border: 1px solid #F5F5F5;
+	box-sizing: border-box;
+	box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+	border-radius: 4px;
+	cursor: pointer;
+
+	&_active {
+		background: $color_orange;
+		color: #ffffff;
+	}
+
+	@media (max-width: 767px) {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+}
+.lf-prices__search-bar {
+	position: relative;
+
+	input {
+		width: calc(100% - 12px);
+		background: #FFFFFF;
+		border: 1px solid #F5F5F5;
+		box-sizing: border-box;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+		border-radius: 4px;
+		font-family: Circe Light, sans-serif;
+		font-size: 16px;
+		line-height: 160%;
+		color: $color_black;
+		padding: 10px 20px 12px 20px;
+		margin: 25px 6px 0 6px;
+	}
+
+	.lf-prices__search-bar-btn {
+		font-size: 16px;
+		color: $color_blue;
+		padding: 13px 20px;
+		background: transparent;
+		border: none;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		cursor: pointer;
+	}
+}
+
+.lf-prices__list {
+	margin-top: 8rem;
+
+	.card-body {
+		padding: 0;
+	}
+	.table {
+		margin-bottom: 0;
+
+		td {
+			border: none;
+			border-bottom: 1px solid #F5F5F5;
+			padding: 15px 30px;
+			font-family: "Circe Regular", sans-serif;
+			font-size: 16px;
+			line-height: 160%;
+
+			@media (max-width: 767px) {
+				padding: 5px 10px;
+			}
+
+			&.lf-prices__list-price {
+				font-family: "Circe Bold", sans-serif;
+				white-space: nowrap;
+				text-align: right;
+			}
+		}
+		tr:last-child td {
+			border-bottom: none;
+		}
+		.lf-prices__list-title td {
+			color: $color_light_grey;
+			font-size: 14px;
+			padding: 25px 30px;
+			border: none;
+			border-bottom: 1px solid #F5F5F5;
+
+			@media (max-width: 767px) {
+				padding: 10px 15px;
+			}
+
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+	.table-striped tbody tr:nth-of-type(odd) {
+		background: transparent;
+	}
+	.table-striped tbody tr:nth-of-type(even) {
+		background: #F9FBFF;
+	}
+}
+
+.lf-prices__form {
+	background: #F8FAFF;
+	padding: 4rem 0;
+
+	h2 a,
+	h2 a:hover,
+	h2 a:active {
+		border: none;
+	}
+
+	@media (max-width: 767px) {
+		padding: 2rem 0;
+	}
+}

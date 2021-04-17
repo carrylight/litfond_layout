@@ -1,0 +1,278 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.4;
+	font-family: 'Circe Regular', Arial, Helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+/* заголовки */
+h1 {
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 140%;
+}
+h2 {
+	font-size: 32px;
+	line-height: 140%;
+	color: #181818;
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+}
+.lf-title_white {
+	color: #ffffff;
+}
+p {
+	font-size: 14px;
+}
+.mt-6 {
+	margin-top: $spacer*4;
+}
+.mb-6 {
+	margin-bottom: $spacer*4;
+}
+.mb-8 {
+	margin-bottom: $spacer*6;
+}
+.pb-6 {
+	padding-bottom: $spacer*4;
+}
+
+.lf-btn,
+.lf-btn:visited {
+	padding: 13px 15px;
+	width: 170px;
+	background-color: $color_orange;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+
+	&:hover {
+		color: #ffffff;
+		background-color: $color_orange_hover;
+	}
+	&:active {
+		color: #ffffff;
+		background-color: $color_orange_active;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+.lf-btn_blue,
+.lf-btn_blue:visited {
+	background: $color_blue;
+
+	&:hover, &:visited {
+		color: #ffffff;
+		background: $color_blue_hover;
+	}
+	&:active {
+		color: #ffffff;
+		background: $color_blue_active;
+	}
+}
+
+.lf-btn_purple {
+	background: $color_purple;
+}
+
+.lf-btn_fullwidth {
+	width: 100%;
+}
+.lf-btn_auto {
+	width: auto;
+}
+.lf-btn.collapsed {
+	background-color: $color_orange;
+
+	&:hover, &:visited {
+		color: #ffffff;
+		background-color: $color_orange_hover;
+	}
+	&:active {
+		color: #ffffff;
+		background-color: $color_orange_hover;
+	}
+}
+.lf-btn_arrow {
+	font-size: 12px;
+	margin-left: 4px;
+}
+
+.lf-btn_callback {
+	width: 44px;
+	height: 44px;
+	padding: 14px 0;
+	margin-right: 15px;
+}
+
+.lf-link {
+	color: $color_link;
+	border-bottom: 1px solid rgba(86, 146, 250, 0.4);
+
+	&:hover {
+		color: $color_link_hover;
+		border-bottom: 1px solid rgba(86, 146, 250, 0.7);
+	}
+	&:active {
+		color: $color_link_active;
+		border-bottom: 1px solid #5692FA;
+	}
+}
+
+.lf-label {
+	font-size: 14px;
+	color: $color_light_grey;
+	font-family: 'Circe Light', sans-serif;
+}
+.lf-input {
+	color: $color_grey;
+	background: #FFFFFF;
+	border: 1px solid #F5F5F5;
+	box-sizing: border-box;
+	box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+	border-radius: 4px;
+	font-family: 'Circe Light', sans-serif;
+
+	&:focus {
+		border: 1px solid $color_link;
+	}
+	&.lf-input_error {
+		background: #FFFBFB;
+		border: 1px solid #D80000;
+	}
+}
+
+.lf-input_file {
+	background: $color_blue;
+	color: #ffffff;
+	padding: 1.25rem 0;
+	border-radius: 10px;
+	text-align: center;
+	font-family: 'Circe Bold', sans-serif;
+	position: relative;
+
+	input {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+	}
+
+	&:hover {
+		background: $color_blue_hover;
+	}
+}
+.lf-input_file-icon {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	background: url("../img/upload-icon.svg") no-repeat center;
+}
+
+
+/* аккордеон в вакансиях и ценах */
+.lf-accordion__list {
+	margin-bottom: 5rem;
+
+	@media (max-width: 767px) {
+		margin-bottom: 3rem;
+	}
+
+	.card {
+		border-radius: 12px !important;
+		border: 1px solid #F5F5F5 !important;
+		box-sizing: border-box;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+		overflow: hidden;
+	}
+	.card-header {
+		background: #FFFFFF;
+		border: 1px solid $color_blue;
+		box-sizing: border-box;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+		border-radius: 10px !important;
+		padding: 1rem 2rem 1rem 3rem;
+	}
+	.card-body {
+		padding: 2rem 2rem 2rem 3rem;
+	}
+	ul {
+		li {
+			list-style: disc outside;
+			color: #0069A3;
+			font-size: 22px;
+			line-height: 1.2;
+			margin-bottom: 0.5rem;
+
+			span {
+				font-size: 16px;
+				color: $color_black;
+			}
+		}
+	}
+}
+.lf-accordion__list-title {
+	font-size: 18px;
+	line-height: 140%;
+	color: $color_black;
+	font-family: 'Circe Bold', sans-serif;
+}
+.lf-accordion__list-title {
+	cursor: pointer;
+
+	.lf-accordion__list-button {
+		border-radius: 10px;
+		display: inline-block;
+		background: #F8FAFF;
+		width: 36px;
+		height: 36px;
+		font-size: 14px;
+		color: #C5D4FA;
+		line-height: 38px;
+		text-align: center;
+		transition: all ease-in-out 0.5s;
+	}
+
+	&.collapsed {
+		.lf-accordion__list-button {
+			background: $color_blue;
+			color: #ffffff;
+			transform: rotate(-180deg);
+		}
+	}
+}

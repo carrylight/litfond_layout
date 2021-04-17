@@ -1,0 +1,77 @@
+.lf-doctors__search {
+	background: #FFFFFF;
+	padding: 25px 24px;
+	border: 1px solid #F5F5F5;
+	box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: -6rem;
+
+	select.form-control {
+		height: 49px !important;
+		border: 1px solid #F5F5F5;
+		box-sizing: border-box;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+		font-family: Circe Light, sans-serif;
+		font-size: 16px;
+	}
+}
+.lf-doctors__search-bar {
+	position: relative;
+
+	input {
+		width: 100%;
+		background: #FFFFFF;
+		border: 1px solid #F5F5F5;
+		box-sizing: border-box;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+		border-radius: 4px;
+		font-family: Circe Light, sans-serif;
+		font-size: 16px;
+		line-height: 160%;
+		color: $color_black;
+		padding: 10px 20px 12px 20px;
+	}
+
+	.lf-doctors__search-bar-btn {
+		font-size: 16px;
+		color: $color_blue;
+		padding: 13px 20px;
+		background: transparent;
+		border: none;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		cursor: pointer;
+	}
+}
+
+.lf-doctors__list {
+	margin-top: 6rem;
+
+	h2 {
+		font-size: 32px;
+		line-height: 140%;
+		color: $color_black;
+		margin: 0 0 3rem 0;
+		position: relative;
+
+		span {
+			display: inline-block;
+			background: #ffffff;
+			padding-right: 40px;
+			z-index: 2;
+			position: relative;
+		}
+
+		&:after {
+			content: "";
+			height: 1px;
+			width: 100%;
+			background: #DEDEDE;
+			position: absolute;
+			left: 0;
+			top: 50%;
+		}
+	}
+}
